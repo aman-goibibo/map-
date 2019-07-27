@@ -1,12 +1,7 @@
-var getparams = {};
+var getparams = {lat : '', lng : ''};
 
-$(document).ready(function () {
-    //   console.log(location.href.lat)
-    //   let lat = new URLSearchParams(window.location.search)
-    //   let long = new URLSearchParams(window.location.long)
-    //   function param(name) {
-    //     return (location.search.split(name + '=')[1] || '').split('&')[0];
-    // }
+
+function initialize() {
 
     getparams = decodeURI(window.location.search)
         .replace('?', '')
@@ -16,11 +11,6 @@ $(document).ready(function () {
             values[key] = value
             return values
         }, {})
-    
-
-})
-
-function initialize() {
     console.log(getparams.lat);
     var fenway = { lat: getparams.lat, lng: getparams.long };
 
