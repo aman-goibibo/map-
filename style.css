@@ -4,6 +4,8 @@ html, body {
     padding: 0;
   }
   #map, #pano {
+      position: absolute;
+      top:0;
     height: 100%;
     width: 100%;
   }
