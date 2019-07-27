@@ -6,5 +6,5 @@ html, body {
   #map, #pano {
     float: left;
     height: 100%;
-    width: 50%;
+    width: 100%;
   }
