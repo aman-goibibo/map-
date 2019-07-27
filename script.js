@@ -12,7 +12,7 @@ function initialize() {
             return values
         }, {})
     console.log(getparams.lat);
-    var fenway = { lat: getparams.lat, lng: getparams.long };
+    var fenway = { lat: parseInt(getparams.lat), lng: parseInt(getparams.long) };
 
     var panorama = new google.maps.StreetViewPanorama(
         document.getElementById('pano'), {
