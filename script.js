@@ -2,8 +2,10 @@
 
   $(document).ready(function () {
       console.log(location.href)
-      let lat = req.query.lat;
-      let long = req.query.long;
+      let lat = new URLSearchParams(window.location.lat)
+      let long = new URLSearchParams(window.location.long)
+
+    console.log(lat);
 
   })
 
