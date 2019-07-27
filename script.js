@@ -1,7 +1,7 @@
 
 
   $(document).ready(function () {
-      console.log(location.href)
+      console.log(location.href.lat)
       let lat = new URLSearchParams(window.location.lat)
       let long = new URLSearchParams(window.location.long)
 
