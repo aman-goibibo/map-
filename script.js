@@ -1,5 +1,17 @@
-function initialize() {
-    var fenway = {lat: 42.345573, lng: -71.098326};
+
+
+  $(document).ready(function () {
+      console.log(location.href)
+      let lat = req.query.lat;
+      let long = req.query.long;
+
+      console.log(lat);
+      console.log(long)
+
+  })
+
+  function initialize() {
+    var fenway = {lat, lng};
   
     var panorama = new google.maps.StreetViewPanorama(
         document.getElementById('pano'), {
